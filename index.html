@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>MYERA AI | Computer Repair & Hardware Solutions</title>
-
   <meta name="description" content="MYERA AI provides desktop and laptop repair, motherboard and BIOS services, computer hardware solutions, new computer sales and upgrades in Karakat, Rohtas, Bihar.">
-
   <meta name="theme-color" content="#07111f">
 
   <style>
@@ -16,6 +14,8 @@
       --panel: #101e31;
       --blue: #168cff;
       --cyan: #36e0ff;
+      --gold: #e8bd55;
+      --gold-light: #fff0ad;
       --text: #f5f8ff;
       --muted: #a9b9d0;
       --border: rgba(130, 180, 255, 0.17);
@@ -59,9 +59,9 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(7, 17, 31, 0.94);
+      background: rgba(7, 17, 31, 0.96);
       backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid rgba(232, 189, 85, 0.22);
     }
 
     .navbar {
@@ -72,15 +72,36 @@
       gap: 18px;
     }
 
-    .logo {
-      font-size: 25px;
+    /* PREMIUM HEADER LOGO */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 49px;
+      height: 49px;
+      object-fit: contain;
+      border-radius: 50%;
+      border: 1px solid rgba(232, 189, 85, 0.5);
+      background: #07111f;
+      box-shadow: 0 0 16px rgba(232, 189, 85, 0.13);
+    }
+
+    .brand-name {
+      font-size: 23px;
       font-weight: 900;
       letter-spacing: 1px;
+      color: #fff;
+      line-height: 1.2;
       white-space: nowrap;
     }
 
-    .logo span {
-      color: var(--cyan);
+    .brand-name span {
+      color: var(--gold);
     }
 
     .nav-links {
@@ -92,7 +113,7 @@
     }
 
     .nav-links a:hover {
-      color: var(--cyan);
+      color: var(--gold);
     }
 
     .menu-btn {
@@ -108,24 +129,24 @@
 
     .hero {
       position: relative;
-      padding: 90px 0 80px;
+      padding: 80px 0;
       background:
         radial-gradient(ellipse at 80% 20%, rgba(0, 130, 255, 0.19), transparent 40%),
-        radial-gradient(ellipse at 15% 70%, rgba(0, 224, 255, 0.08), transparent 35%);
+        radial-gradient(ellipse at 15% 70%, rgba(232, 189, 85, 0.08), transparent 35%);
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 1.1fr 0.9fr;
       align-items: center;
-      gap: 50px;
+      gap: 45px;
     }
 
     .badge {
       display: inline-block;
-      color: var(--cyan);
-      background: rgba(54, 224, 255, 0.08);
-      border: 1px solid rgba(54, 224, 255, 0.24);
+      color: var(--gold-light);
+      background: rgba(232, 189, 85, 0.08);
+      border: 1px solid rgba(232, 189, 85, 0.35);
       padding: 7px 13px;
       border-radius: 30px;
       font-size: 12px;
@@ -141,8 +162,9 @@
       margin-bottom: 22px;
     }
 
-    h1 span, .gradient-text {
-      background: linear-gradient(90deg, #36e0ff, #168cff);
+    h1 span,
+    .gradient-text {
+      background: linear-gradient(90deg, var(--gold-light), var(--gold), var(--cyan));
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -172,6 +194,7 @@
       font-size: 14px;
       transition: 0.2s;
       border: 1px solid transparent;
+      cursor: pointer;
     }
 
     .btn:hover {
@@ -179,14 +202,19 @@
     }
 
     .btn-primary {
-      background: linear-gradient(100deg, #168cff, #0871e9);
-      color: white;
-      box-shadow: 0 8px 25px rgba(22, 140, 255, 0.2);
+      background: linear-gradient(100deg, #c99730, #f0d47b);
+      color: #101522;
+      box-shadow: 0 8px 25px rgba(232, 189, 85, 0.17);
     }
 
     .btn-outline {
       border-color: var(--border);
       background: rgba(255, 255, 255, 0.03);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold);
     }
 
     .btn-whatsapp {
@@ -194,49 +222,49 @@
       color: #031b10;
     }
 
+    /* LARGE HOMEPAGE LOGO */
     .hero-visual {
-      min-height: 350px;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative;
+      min-width: 0;
     }
 
-    .tech-card {
+    .hero-logo-card {
       width: 100%;
-      max-width: 390px;
-      padding: 30px;
+      max-width: 430px;
+      padding: 14px;
       border-radius: 25px;
-      background: linear-gradient(145deg, #142b46, #0a1729);
-      border: 1px solid rgba(54, 224, 255, 0.25);
-      box-shadow: 0 25px 80px rgba(0, 119, 255, 0.12);
-      transform: rotate(1deg);
+      background: linear-gradient(145deg, #172338, #080f1b);
+      border: 1px solid rgba(232, 189, 85, 0.55);
+      box-shadow:
+        0 25px 75px rgba(0, 119, 255, 0.12),
+        0 10px 45px rgba(232, 189, 85, 0.08);
+      text-align: center;
     }
 
-    .computer-art {
-      height: 190px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 110px;
-      background: radial-gradient(circle, rgba(22, 140, 255, 0.2), transparent 70%);
+    .hero-logo-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 430px;
+      object-fit: contain;
+      border-radius: 15px;
     }
 
-    .tech-card h3 {
-      font-size: 22px;
-      margin: 8px 0;
-    }
-
-    .tech-card p {
-      font-size: 14px;
-      margin-bottom: 0;
+    .hero-logo-caption {
+      color: var(--gold-light);
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 12px 4px 4px;
     }
 
     .mini-stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
-      margin-top: 22px;
+      margin-top: 25px;
     }
 
     .mini-stat {
@@ -250,7 +278,7 @@
     .mini-stat strong {
       display: block;
       font-size: 18px;
-      color: var(--cyan);
+      color: var(--gold);
     }
 
     .mini-stat span {
@@ -269,7 +297,7 @@
     }
 
     .eyebrow {
-      color: var(--cyan);
+      color: var(--gold);
       text-transform: uppercase;
       letter-spacing: 2px;
       font-size: 12px;
@@ -302,7 +330,7 @@
     }
 
     .service-card:hover {
-      border-color: rgba(54, 224, 255, 0.55);
+      border-color: rgba(232, 189, 85, 0.6);
       transform: translateY(-5px);
     }
 
@@ -312,7 +340,7 @@
       display: grid;
       place-items: center;
       font-size: 27px;
-      background: rgba(22, 140, 255, 0.12);
+      background: rgba(232, 189, 85, 0.10);
       border-radius: 14px;
       margin-bottom: 18px;
     }
@@ -340,7 +368,7 @@
 
     .service-card li::before {
       content: "✓ ";
-      color: var(--cyan);
+      color: var(--gold);
       font-weight: bold;
     }
 
@@ -429,14 +457,16 @@
       align-items: stretch;
     }
 
-    .contact-info, .contact-card {
+    .contact-info,
+    .contact-card {
       padding: 28px;
       background: rgba(16, 30, 49, 0.8);
       border: 1px solid var(--border);
       border-radius: 18px;
     }
 
-    .contact-info h3, .contact-card h3 {
+    .contact-info h3,
+    .contact-card h3 {
       font-size: 22px;
       margin-bottom: 20px;
     }
@@ -457,14 +487,15 @@
       margin-bottom: 3px;
     }
 
-    .contact-line p, .contact-line a {
+    .contact-line p,
+    .contact-line a {
       color: var(--muted);
       font-size: 14px;
       overflow-wrap: anywhere;
     }
 
     .contact-line a:hover {
-      color: var(--cyan);
+      color: var(--gold);
     }
 
     .person {
@@ -475,7 +506,7 @@
     }
 
     .person strong {
-      color: var(--cyan);
+      color: var(--gold-light);
     }
 
     .contact-card p {
@@ -492,6 +523,7 @@
     .phone-buttons .btn {
       width: 100%;
       padding: 15px;
+      text-align: center;
     }
 
     footer {
@@ -500,71 +532,38 @@
       text-align: center;
     }
 
-    footer .logo {
-      display: inline-block;
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
       margin-bottom: 8px;
+    }
+
+    .footer-brand img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    .footer-brand span {
+      font-size: 21px;
+      font-weight: 900;
+    }
+
+    .footer-brand b {
+      color: var(--gold);
     }
 
     footer p {
       color: var(--muted);
-      font-size: 12px;
-      margin-top: 5px;
-    }
-
-    .floating-whatsapp {
-      position: fixed;
-      z-index: 90;
-      bottom: 20px;
-      right: 18px;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      background: var(--green);
-      color: #062514;
-      display: grid;
-      place-items: center;
-      font-size: 29px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-    }
-
-    @media (max-width: 850px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+  img {
+        width: 42px;
+        height: 42px;
       }
 
-      .hero {
-        padding-top: 65px;
-      }
-
-      .hero-visual {
-        min-height: auto;
-      }
-
-      .tech-card {
-        transform: none;
-      }
-
-      .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .sales-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .navbar {
-        min-height: 68px;
-      }
-
-      .logo {
-        font-size: 22px;
+      .brand-name {
+        font-size: 20px;
       }
 
       .menu-btn {
@@ -594,7 +593,7 @@
       }
 
       .hero {
-        padding: 52px 0;
+        padding: 48px 0;
       }
 
       h1 {
@@ -605,23 +604,15 @@
         font-size: 15px;
       }
 
-      .computer-art {
-        height: 145px;
-        font-size: 85px;
-      }
-
-      .tech-card {
-        padding: 22px;
+      .hero-logo-card {
+        padding: 9px;
       }
 
       section {
         padding: 60px 0;
       }
 
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-
+      .services-grid,
       .why-grid {
         grid-template-columns: 1fr;
       }
@@ -642,7 +633,8 @@
         font-size: 10px;
       }
 
-      .contact-info, .contact-card {
+      .contact-info,
+      .contact-card {
         padding: 21px;
       }
     }
@@ -653,7 +645,13 @@
 
 <header>
   <div class="container navbar">
-    <a class="logo" href="#home">MYERA<span> AI</span></a>
+
+    <a class="brand" href="#home" aria-label="MYERA AI Home">
+      <img
+        src="file_000000008748821198b9e9bea3494906.png"
+        alt="MYERA AI Logo">
+      <span class="brand-name">MYERA <span>AI</span></span>
+    </a>
 
     <button class="menu-btn" id="menuBtn"
       aria-label="Open navigation menu"
@@ -666,6 +664,7 @@
       <a href="#about">About Us</a>
       <a href="#contact">Contact</a>
     </nav>
+
   </div>
 </header>
 
@@ -716,14 +715,13 @@
         </div>
       </div>
 
+      <!-- LARGE GOLDEN-BLUE LOGO -->
       <div class="hero-visual">
-        <div class="tech-card">
-          <div class="computer-art">💻</div>
-          <div class="badge">MYERA AI TECHNOLOGY</div>
-          <h3>Complete Computer Care</h3>
-          <p>
-            Repair • Upgrade • Hardware • New Computers
-          </p>
+        <div class="hero-logo-card">
+          <img
+            src="file_000000008748821198b9e9bea3494906.png"
+            alt="MYERA AI Premium Golden Blue Logo">
+          <div class="hero-logo-caption">MYERA AI • TECHNOLOGY SOLUTIONS</div>
         </div>
       </div>
 
@@ -923,7 +921,6 @@
         </div>
 
       </div>
-
     </div>
   </section>
 
@@ -1025,7 +1022,14 @@
 
 <footer>
   <div class="container">
-    <a class="logo" href="#home">MYERA<span> AI</span></a>
+
+    <a class="footer-brand" href="#home">
+      <img
+        src="file_000000008748821198b9e9bea3494906.png"
+        alt="MYERA AI Logo">
+      <span>MYERA <b>AI</b></span>
+    </a>
+
     <p>Computer Repair • Computer Sales • Hardware Solutions</p>
     <p>BURHWAL (GORARI), Karakat, Rohtas, Bihar – 802214</p>
     <p>© <span id="year"></span> MYERA AI. All rights reserved.</p>
