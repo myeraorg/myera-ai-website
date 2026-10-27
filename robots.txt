@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://myera-ai-website.pages.dev/sitemap.xml
