@@ -6,9 +6,11 @@
 
   <title>MYERA AI | Computer & Laptop Solutions</title>
 
-  <meta name="description" content="MYERA AI provides desktop, laptop, motherboard, BIOS, chip-level repair, Windows installation, computer hardware and gaming PC solutions in Bihar.">
+  <meta name="description" content="MYERA AI provides laptop and desktop repair, motherboard repair, BIOS solutions, chip-level repair, Windows installation and computer hardware services in Bihar.">
 
   <meta name="theme-color" content="#070b14">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://myera-ai-website.pages.dev/">
 
   <style>
     :root {
@@ -21,8 +23,8 @@
       --text: #f4f7ff;
       --muted: #a8b4c8;
       --green: #25d366;
-      --border: rgba(255, 255, 255, 0.10);
-      --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+      --border: rgba(255,255,255,.10);
+      --shadow: 0 18px 50px rgba(0,0,0,.28);
     }
 
     * {
@@ -39,16 +41,8 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background:
-        radial-gradient(
-          circle at 80% 5%,
-          rgba(41, 184, 255, 0.09),
-          transparent 28%
-        ),
-        radial-gradient(
-          circle at 5% 25%,
-          rgba(244, 196, 94, 0.06),
-          transparent 25%
-        ),
+        radial-gradient(circle at 80% 5%, rgba(41,184,255,.09), transparent 28%),
+        radial-gradient(circle at 5% 25%, rgba(244,196,94,.06), transparent 25%),
         var(--bg);
       color: var(--text);
       line-height: 1.7;
@@ -56,8 +50,8 @@
     }
 
     a {
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
     }
 
     img {
@@ -70,7 +64,7 @@
     }
 
     .container {
-      width: min(1160px, 90%);
+      width: min(1160px, 91%);
       margin: 0 auto;
     }
 
@@ -80,7 +74,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(7, 11, 20, 0.94);
+      background: rgba(7,11,20,.96);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border);
     }
@@ -108,10 +102,6 @@
       flex-shrink: 0;
     }
 
-    .brand-text {
-      min-width: 0;
-    }
-
     .brand-name {
       font-size: 23px;
       line-height: 1.2;
@@ -130,13 +120,12 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 25px;
+      gap: 22px;
     }
 
     .nav-links a {
       color: #dce5f5;
       font-size: 14px;
-      transition: color 0.2s;
     }
 
     .nav-links a:hover {
@@ -144,9 +133,9 @@
     }
 
     .nav-links .nav-contact {
-      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      background: linear-gradient(135deg,var(--gold),var(--gold-light));
       color: #111827;
-      padding: 10px 17px;
+      padding: 10px 16px;
       border-radius: 8px;
       font-weight: 800;
     }
@@ -157,7 +146,7 @@
       background: var(--card);
       color: white;
       border-radius: 9px;
-      padding: 7px 12px;
+      padding: 6px 12px;
       font-size: 25px;
       cursor: pointer;
     }
@@ -174,24 +163,24 @@
       font-size: 14px;
       font-weight: 800;
       border: 1px solid transparent;
-      transition: transform 0.2s, opacity 0.2s;
+      transition: transform .2s, opacity .2s;
       cursor: pointer;
     }
 
     .btn:hover {
       transform: translateY(-3px);
-      opacity: 0.95;
+      opacity: .95;
     }
 
     .btn-gold {
-      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      background: linear-gradient(135deg,var(--gold),var(--gold-light));
       color: #10131b;
-      box-shadow: 0 8px 25px rgba(244, 196, 94, 0.15);
+      box-shadow: 0 8px 25px rgba(244,196,94,.15);
     }
 
     .btn-outline {
-      border-color: rgba(41, 184, 255, 0.55);
-      background: rgba(41, 184, 255, 0.07);
+      border-color: rgba(41,184,255,.55);
+      background: rgba(41,184,255,.07);
       color: #d9f3ff;
     }
 
@@ -203,25 +192,25 @@
     /* HERO */
 
     .hero {
-      padding: 90px 0 85px;
-      min-height: 600px;
+      padding: 85px 0;
+      min-height: 570px;
       display: flex;
       align-items: center;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1.05fr .95fr;
       align-items: center;
-      gap: 55px;
+      gap: 50px;
     }
 
     .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      border: 1px solid rgba(244, 196, 94, 0.3);
-      background: rgba(244, 196, 94, 0.07);
+      border: 1px solid rgba(244,196,94,.3);
+      background: rgba(244,196,94,.07);
       color: var(--gold-light);
       border-radius: 30px;
       padding: 7px 14px;
@@ -239,19 +228,14 @@
     }
 
     h1 {
-      font-size: clamp(42px, 5.5vw, 67px);
-      line-height: 1.08;
-      letter-spacing: -1.8px;
+      font-size: clamp(38px,5.5vw,65px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
       margin-bottom: 23px;
     }
 
     .gradient-text {
-      background: linear-gradient(
-        100deg,
-        var(--gold-light),
-        var(--gold),
-        var(--blue)
-      );
+      background: linear-gradient(100deg,var(--gold-light),var(--gold),var(--blue));
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -260,83 +244,58 @@
     .hero-description {
       max-width: 570px;
       color: var(--muted);
-      font-size: 17px;
-      margin-bottom: 29px;
+      font-size: 16px;
+      margin-bottom: 28px;
     }
 
     .hero-buttons {
       display: flex;
-      flex-wrap: wrap;
       gap: 13px;
-      margin-bottom: 34px;
+      flex-wrap: wrap;
     }
 
     .hero-points {
       display: flex;
+      gap: 18px;
       flex-wrap: wrap;
-      gap: 17px;
-      color: #cbd6e8;
+      margin-top: 27px;
+      color: #c8d3e6;
       font-size: 13px;
     }
 
     .hero-points span::before {
-      content: "✓";
+      content: "✓ ";
       color: var(--gold);
-      font-weight: 900;
-      margin-right: 7px;
+      font-weight: bold;
     }
-
-    /* LOGO CARD */
 
     .hero-visual {
       position: relative;
-      min-width: 0;
+      max-width: 520px;
+      width: 100%;
+      margin: auto;
     }
 
     .hero-glow {
       position: absolute;
-      inset: 12%;
-      background: rgba(41, 184, 255, 0.14);
-      filter: blur(65px);
+      inset: 10%;
+      background: linear-gradient(135deg,rgba(244,196,94,.2),rgba(41,184,255,.2));
+      filter: blur(60px);
       border-radius: 50%;
-      pointer-events: none;
     }
 
     .hero-logo-card {
       position: relative;
-      z-index: 1;
-      padding: 18px;
-      border: 1px solid rgba(244, 196, 94, 0.3);
+      background: linear-gradient(145deg,#131f33,#080d18);
+      border: 1px solid rgba(244,196,94,.35);
       border-radius: 22px;
-      background: linear-gradient(
-        145deg,
-        rgba(22, 34, 54, 0.97),
-        rgba(7, 11, 20, 0.98)
-      );
+      padding: 20px;
       box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    .hero-logo-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 12%;
-      right: 12%;
-      height: 2px;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        var(--gold),
-        var(--blue),
-        transparent
-      );
     }
 
     .hero-logo {
       width: 100%;
-      height: auto;
-      aspect-ratio: 1 / 1;
+      max-height: 370px;
       object-fit: contain;
       border-radius: 12px;
     }
@@ -351,7 +310,7 @@
     .logo-caption strong {
       display: block;
       color: var(--gold);
-      font-size: 18px;
+      font-size: 20px;
       letter-spacing: 2px;
     }
 
@@ -364,12 +323,12 @@
     /* GENERAL SECTIONS */
 
     section {
-      padding: 85px 0;
+      padding: 80px 0;
     }
 
     .section-heading {
       max-width: 720px;
-      margin: 0 auto 48px;
+      margin: 0 auto 42px;
       text-align: center;
     }
 
@@ -379,12 +338,11 @@
       font-size: 12px;
       font-weight: 900;
       letter-spacing: 2px;
-      text-transform: uppercase;
       margin-bottom: 10px;
     }
 
     h2 {
-      font-size: clamp(30px, 4vw, 43px);
+      font-size: clamp(29px,4vw,43px);
       line-height: 1.2;
       margin-bottom: 15px;
     }
@@ -396,33 +354,31 @@
 
     /* SERVICES */
 
-    .services-section {
-      background: rgba(13, 20, 35, 0.55);
+    .services-section,
+    .why-section,
+    .contact-section {
+      background: rgba(13,20,35,.55);
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
     }
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3,minmax(0,1fr));
       gap: 20px;
     }
 
     .service-card {
-      background: linear-gradient(
-        145deg,
-        rgba(17, 27, 45, 0.95),
-        rgba(10, 16, 29, 0.95)
-      );
+      background: linear-gradient(145deg,rgba(17,27,45,.95),rgba(10,16,29,.95));
       border: 1px solid var(--border);
       border-radius: 15px;
-      padding: 27px 23px;
-      transition: transform 0.25s, border-color 0.25s;
+      padding: 25px 22px;
+      transition: transform .25s,border-color .25s;
     }
 
     .service-card:hover {
       transform: translateY(-5px);
-      border-color: rgba(41, 184, 255, 0.5);
+      border-color: rgba(41,184,255,.5);
     }
 
     .service-icon {
@@ -430,16 +386,16 @@
       height: 52px;
       display: grid;
       place-items: center;
-      background: rgba(41, 184, 255, 0.1);
-      border: 1px solid rgba(41, 184, 255, 0.2);
+      background: rgba(41,184,255,.1);
+      border: 1px solid rgba(41,184,255,.2);
       border-radius: 13px;
       font-size: 26px;
-      margin-bottom: 18px;
+      margin-bottom: 17px;
     }
 
     .service-card h3 {
-      font-size: 19px;
-      margin-bottom: 10px;
+      font-size: 18px;
+      margin-bottom: 9px;
       color: var(--gold-light);
     }
 
@@ -448,62 +404,67 @@
       font-size: 14px;
     }
 
-    /* SALES */
+    /* HARDWARE GALLERY */
 
-    .sales-grid {
+    .gallery-section {
+      background:
+        radial-gradient(circle at 50% 0%,rgba(244,196,94,.06),transparent 40%),
+        var(--bg);
+    }
+
+    .hardware-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(4,minmax(0,1fr));
       gap: 20px;
     }
 
-    .sales-card {
-      display: flex;
-      gap: 17px;
-      padding: 24px;
-      border: 1px solid var(--border);
-      background: var(--card);
-      border-radius: 14px;
+    .hardware-card {
+      overflow: hidden;
+      border: 1px solid rgba(244,196,94,.19);
+      background: linear-gradient(145deg,#121d30,#090f1c);
+      border-radius: 15px;
+      box-shadow: 0 10px 28px rgba(0,0,0,.2);
+      transition: transform .25s,border-color .25s,box-shadow .25s;
     }
 
-    .sales-icon {
-      font-size: 30px;
-      flex-shrink: 0;
+    .hardware-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold);
+      box-shadow: 0 15px 35px rgba(244,196,94,.1);
     }
 
-    .sales-card h3 {
+    .hardware-card img {
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+      background: #111b2d;
+    }
+
+    .hardware-card h3 {
+      text-align: center;
+      padding: 13px 8px;
       color: var(--gold-light);
-      font-size: 18px;
-      margin-bottom: 7px;
-    }
-
-    .sales-card p {
-      color: var(--muted);
-      font-size: 14px;
+      font-size: 15px;
+      line-height: 1.4;
     }
 
     /* WHY US */
 
-    .why-section {
-      background: rgba(13, 20, 35, 0.55);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-
     .why-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4,minmax(0,1fr));
       gap: 17px;
     }
 
     .why-card {
       text-align: center;
-      padding: 25px 17px;
+      padding: 24px 16px;
       border: 1px solid var(--border);
       border-radius: 13px;
-      background: rgba(17, 27, 45, 0.75);
+      background: rgba(17,27,45,.75);
     }
 
-    .why-card .why-icon {
+    .why-icon {
       font-size: 31px;
       margin-bottom: 10px;
     }
@@ -524,12 +485,8 @@
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 45px;
+      gap: 40px;
       align-items: center;
-    }
-
-    .about-copy h2 {
-      margin-bottom: 20px;
     }
 
     .about-copy p {
@@ -539,14 +496,10 @@
     }
 
     .about-highlight {
-      padding: 26px;
-      border: 1px solid rgba(244, 196, 94, 0.28);
+      padding: 27px;
+      border: 1px solid rgba(244,196,94,.28);
       border-radius: 15px;
-      background: linear-gradient(
-        145deg,
-        rgba(244, 196, 94, 0.07),
-        rgba(41, 184, 255, 0.05)
-      );
+      background: linear-gradient(145deg,rgba(244,196,94,.07),rgba(41,184,255,.05));
     }
 
     .about-highlight h3 {
@@ -561,16 +514,7 @@
       margin-bottom: 12px;
     }
 
-    .about-highlight p:last-child {
-      margin-bottom: 0;
-    }
-
     /* CONTACT */
-
-    .contact-section {
-      background: rgba(13, 20, 35, 0.55);
-      border-top: 1px solid var(--border);
-    }
 
     .contact-grid {
       display: grid;
@@ -581,7 +525,7 @@
 
     .contact-info,
     .contact-card {
-      padding: 30px;
+      padding: 28px;
       border-radius: 16px;
       border: 1px solid var(--border);
       background: var(--card);
@@ -591,19 +535,15 @@
     .contact-info h3,
     .contact-card h3 {
       font-size: 23px;
-      color: var(--gold-light);
       margin-bottom: 22px;
+      color: var(--gold-light);
     }
 
     .contact-item {
       display: flex;
-      align-items: flex-start;
       gap: 14px;
-      margin-bottom: 22px;
-    }
-
-    .contact-item:last-child {
-      margin-bottom: 0;
+      margin-bottom: 21px;
+      align-items: flex-start;
     }
 
     .contact-icon {
@@ -611,21 +551,19 @@
       height: 43px;
       display: grid;
       place-items: center;
-      background: rgba(41, 184, 255, 0.1);
-      border-radius: 10px;
-      font-size: 21px;
       flex-shrink: 0;
+      border-radius: 11px;
+      background: rgba(41,184,255,.1);
+      font-size: 21px;
     }
 
     .contact-item strong {
       display: block;
-      color: #eef4ff;
-      font-size: 14px;
-      margin-bottom: 3px;
+      margin-bottom: 5px;
+      color: var(--gold-light);
     }
 
-    .contact-item p,
-    .contact-item a {
+    .contact-item p {
       color: var(--muted);
       font-size: 14px;
       overflow-wrap: anywhere;
@@ -649,12 +587,6 @@
 
     .contact-actions .btn {
       width: 100%;
-    }
-
-    .contact-note {
-      font-size: 12px !important;
-      margin-top: 17px;
-      margin-bottom: 0 !important;
     }
 
     /* FOOTER */
@@ -697,10 +629,6 @@
       color: var(--muted);
     }
 
-    .footer-links a:hover {
-      color: var(--gold);
-    }
-
     .copyright {
       margin-top: 25px;
       padding-top: 20px;
@@ -723,10 +651,10 @@
       border-radius: 50%;
       background: var(--green);
       color: #052011;
-      font-size: 29px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+      font-size: 28px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.35);
       z-index: 900;
-      transition: transform 0.2s;
+      transition: transform .2s;
     }
 
     .floating-whatsapp:hover {
@@ -735,14 +663,10 @@
 
     /* TABLET */
 
-    @media (max-width: 900px) {
+    @media (max-width: 950px) {
       .hero-grid {
         grid-template-columns: 1fr;
-        gap: 38px;
-      }
-
-      .hero {
-        padding: 65px 0;
+        gap: 35px;
       }
 
       .hero-copy {
@@ -760,25 +684,23 @@
       }
 
       .hero-visual {
-        width: 100%;
-        max-width: 540px;
-        margin: 0 auto;
+        max-width: 480px;
       }
 
       .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+
+      .hardware-grid {
+        grid-template-columns: repeat(3,minmax(0,1fr));
       }
 
       .why-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .about-grid {
-        gap: 25px;
+        grid-template-columns: repeat(2,minmax(0,1fr));
       }
 
       .nav-links {
-        gap: 14px;
+        gap: 12px;
       }
 
       .nav-links a {
@@ -812,7 +734,7 @@
 
       .brand-tagline {
         font-size: 8px;
-        letter-spacing: 0.6px;
+        letter-spacing: .5px;
       }
 
       .menu-btn {
@@ -826,7 +748,7 @@
         top: 70px;
         left: -5%;
         right: -5%;
-        padding: 18px 5% 23px;
+        padding: 15px 5% 22px;
         background: #0a1220;
         border-bottom: 1px solid var(--border);
         flex-direction: column;
@@ -850,16 +772,12 @@
       }
 
       .hero {
-        padding: 52px 0 55px;
+        padding: 52px 0;
         min-height: auto;
       }
 
-      .hero-grid {
-        gap: 33px;
-      }
-
       h1 {
-        font-size: clamp(39px, 10vw, 53px);
+        font-size: clamp(37px,10vw,52px);
         letter-spacing: -1px;
       }
 
@@ -882,7 +800,7 @@
       }
 
       .hero-logo-card {
-        padding: 10px;
+        padding: 12px;
         border-radius: 16px;
       }
 
@@ -892,15 +810,15 @@
 
       .logo-caption span {
         font-size: 9px;
-        letter-spacing: 0.7px;
+        letter-spacing: .5px;
       }
 
       section {
-        padding: 60px 0;
+        padding: 58px 0;
       }
 
       .section-heading {
-        margin-bottom: 32px;
+        margin-bottom: 30px;
       }
 
       h2 {
@@ -912,46 +830,42 @@
       }
 
       .services-grid,
-      .sales-grid,
-      .why-grid,
       .about-grid,
       .contact-grid {
         grid-template-columns: 1fr;
       }
 
-      .service-card {
-        padding: 23px 20px;
+      .hardware-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 12px;
       }
 
-      .sales-card {
-        padding: 21px;
+      .hardware-card img {
+        height: 125px;
+      }
+
+      .hardware-card h3 {
+        font-size: 13px;
+        padding: 11px 5px;
+      }
+
+      .service-card {
+        padding: 22px 19px;
       }
 
       .about-grid {
         gap: 23px;
       }
 
-      .about-highlight {
-        padding: 22px;
-      }
-
+      .about-highlight,
       .contact-info,
       .contact-card {
-        padding: 23px 19px;
-      }
-
-      .contact-info h3,
-      .contact-card h3 {
-        font-size: 21px;
+        padding: 21px;
       }
 
       .footer-content {
         flex-direction: column;
         align-items: flex-start;
-      }
-
-      .footer-links {
-        gap: 14px;
       }
 
       .floating-whatsapp {
@@ -962,15 +876,18 @@
       }
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
+    @media (max-width: 360px) {
+      .brand-tagline {
+        letter-spacing: 0;
+        font-size: 7px;
       }
 
-      *,
-      *::before,
-      *::after {
-        transition: none !important;
+      .hardware-grid {
+        gap: 9px;
+      }
+
+      .hardware-card img {
+        height: 108px;
       }
     }
   </style>
@@ -979,18 +896,23 @@
 <body>
 
   <!-- HEADER -->
+
   <header>
     <div class="container navbar">
 
-      <a href="#home" class="brand" aria-label="MYERA AI Home">
+      <a class="brand" href="#home" aria-label="MYERA AI Home">
         <img
           src="file_000000008748821198b9e9bea3494906.png"
           alt="MYERA AI Logo"
+          width="54"
+          height="54"
         >
 
-        <div class="brand-text">
+        <div>
           <div class="brand-name">MYERA AI</div>
-          <div class="brand-tagline">SMARTER TODAY • BRIGHTER TOMORROW</div>
+          <div class="brand-tagline">
+            SMARTER TODAY • BRIGHTER TOMORROW
+          </div>
         </div>
       </a>
 
@@ -1006,7 +928,7 @@
       <nav class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#services">Services</a>
-        <a href="#products">Products</a>
+        <a href="#hardware">Hardware Gallery</a>
         <a href="#about">About Us</a>
         <a href="#contact" class="nav-contact">Contact Us</a>
       </nav>
@@ -1017,6 +939,7 @@
   <main>
 
     <!-- HERO -->
+
     <section class="hero" id="home">
       <div class="container hero-grid">
 
@@ -1035,7 +958,7 @@
           <p class="hero-description">
             Welcome to MYERA AI — your destination for computer hardware,
             desktop and laptop repair, motherboard troubleshooting,
-            BIOS solutions, software installation and technology guidance.
+            BIOS solutions, software installation and technology services.
           </p>
 
           <div class="hero-buttons">
@@ -1068,7 +991,10 @@
             <img
               class="hero-logo"
               src="file_000000008748821198b9e9bea3494906.png"
-              alt="MYERA AI Premium Gold and Blue Logo"
+              alt="MYERA AI Premium Logo"
+              width="500"
+              height="370"
+              fetchpriority="high"
             >
 
             <div class="logo-caption">
@@ -1082,6 +1008,7 @@
     </section>
 
     <!-- SERVICES -->
+
     <section class="services-section" id="services">
       <div class="container">
 
@@ -1093,8 +1020,8 @@
           </h2>
 
           <p>
-            Complete desktop, laptop and computer hardware solutions —
-            from basic troubleshooting to advanced repair guidance.
+            Computer hardware, desktop and laptop solutions for home users,
+            students, offices and computer enthusiasts.
           </p>
         </div>
 
@@ -1104,8 +1031,8 @@
             <div class="service-icon">💻</div>
             <h3>Laptop Repair</h3>
             <p>
-              Laptop troubleshooting, startup problems, display issues,
-              keyboard faults, charging problems and hardware diagnosis.
+              Laptop startup problems, display issues, keyboard faults,
+              charging problems and hardware diagnosis.
             </p>
           </article>
 
@@ -1113,8 +1040,8 @@
             <div class="service-icon">🖥️</div>
             <h3>Desktop & PC Repair</h3>
             <p>
-              Desktop computer repair, boot failures, performance issues,
-              hardware replacement and system troubleshooting.
+              Desktop repair, boot failures, performance issues,
+              hardware replacement and troubleshooting.
             </p>
           </article>
 
@@ -1122,8 +1049,8 @@
             <div class="service-icon">🔬</div>
             <h3>Motherboard Repair</h3>
             <p>
-              Motherboard fault diagnosis, power problems, component
-              troubleshooting and chip-level repair solutions.
+              Motherboard fault diagnosis, power problems,
+              component troubleshooting and chip-level repair.
             </p>
           </article>
 
@@ -1140,8 +1067,8 @@
             <div class="service-icon">🪟</div>
             <h3>Windows & Software</h3>
             <p>
-              Windows installation, driver setup, software installation,
-              operating-system troubleshooting and system optimization.
+              Windows installation, driver setup, software installation
+              and operating-system troubleshooting.
             </p>
           </article>
 
@@ -1149,26 +1076,8 @@
             <div class="service-icon">💾</div>
             <h3>RAM, SSD & HDD</h3>
             <p>
-              Memory and storage upgrades, compatibility information,
-              slow-computer diagnosis and storage troubleshooting.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">🔌</div>
-            <h3>Power & Charging</h3>
-            <p>
-              Power-on failures, adapter and charging issues,
-              power-supply checks and motherboard power diagnosis.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">🛠️</div>
-            <h3>Hardware Troubleshooting</h3>
-            <p>
-              Component testing, overheating diagnosis, fan problems,
-              connectivity issues and computer maintenance guidance.
+              Memory and storage upgrades, compatibility checks
+              and slow-computer troubleshooting.
             </p>
           </article>
 
@@ -1176,8 +1085,26 @@
             <div class="service-icon">🎮</div>
             <h3>Gaming PC Solutions</h3>
             <p>
-              Gaming computer configuration, graphics cards,
-              compatible components, performance upgrades and build guidance.
+              Gaming PC components, hardware compatibility,
+              upgrades and configuration guidance.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🔌</div>
+            <h3>Power & Charging</h3>
+            <p>
+              Computer power issues, laptop charging faults
+              and power-related hardware diagnosis.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🧰</div>
+            <h3>Computer Upgrades</h3>
+            <p>
+              Hardware upgrade guidance, component selection
+              and computer performance improvement.
             </p>
           </article>
 
@@ -1185,79 +1112,219 @@
       </div>
     </section>
 
-    <!-- PRODUCTS -->
-    <section id="products">
+    <!-- HARDWARE GALLERY -->
+
+    <section class="gallery-section" id="hardware">
       <div class="container">
 
         <div class="section-heading">
-          <span class="section-kicker">COMPUTER TECHNOLOGY</span>
+          <span class="section-kicker">COMPUTER COMPONENTS</span>
 
           <h2>
-            Products & <span class="gradient-text">Upgrades</span>
+            Hardware <span class="gradient-text">Gallery</span>
           </h2>
 
           <p>
-            Get information and guidance about computer components,
-            new systems and upgrades according to your requirements.
+            Explore computer hardware and essential components.
           </p>
         </div>
 
-        <div class="sales-grid">
+        <div class="hardware-grid">
 
-          <article class="sales-card">
-            <div class="sales-icon">💻</div>
-
-            <div>
-              <h3>New Laptops & Computers</h3>
-              <p>
-                Explore suitable desktop and laptop configurations
-                for home, office, education and professional use.
-              </p>
-            </div>
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=650&q=80"
+              alt="Computer Motherboard"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>Motherboard</h3>
           </article>
 
-          <article class="sales-card">
-            <div class="sales-icon">🎮</div>
-
-            <div>
-              <h3>Gaming PC Builds</h3>
-              <p>
-                Guidance on processors, graphics cards, RAM,
-                motherboards, power supplies and gaming setups.
-              </p>
-            </div>
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=650&q=80"
+              alt="Computer RAM"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>RAM</h3>
           </article>
 
-          <article class="sales-card">
-            <div class="sales-icon">⚙️</div>
-
-            <div>
-              <h3>Computer Components</h3>
-              <p>
-                Learn about CPUs, motherboards, RAM, SSDs,
-                hard drives, graphics cards and compatible parts.
-              </p>
-            </div>
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=650&q=80"
+              alt="Solid State Drive"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>SSD</h3>
           </article>
 
-          <article class="sales-card">
-            <div class="sales-icon">🚀</div>
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=650&q=80"
+              alt="Computer Storage Drive"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>HDD</h3>
+          </article>
 
-            <div>
-              <h3>Performance Upgrades</h3>
-              <p>
-                Get guidance for SSD upgrades, memory expansion,
-                system improvements and hardware compatibility.
-              </p>
-            </div>
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=650&q=80"
+              alt="Computer Processor"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>CPU / Processor</h3>
+          </article>
+
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=650&q=80"
+              alt="Computer Graphics Card"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>Graphics Card (GPU)</h3>
+          </article>
+
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=650&q=80"
+              alt="Computer Power Supply"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>SMPS / Power Supply</h3>
+          </article>
+
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=650&q=80"
+              alt="Computer Cooling Fan"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>CPU Cooling Fan</h3>
+          </article>
+
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=650&q=80"
+              alt="Desktop Computer"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>Desktop Computer</h3>
+          </article>
+
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=650&q=80"
+              alt="Laptop Computer"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>Laptop</h3>
+          </article>
+
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=650&q=80"
+              alt="Computer Keyboard"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>Keyboard</h3>
+          </article>
+
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=650&q=80"
+              alt="Computer Mouse"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>Mouse</h3>
+          </article>
+
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1587202372583-49330a15584d?auto=format&fit=crop&w=650&q=80"
+              alt="Computer BIOS and Motherboard Components"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>BIOS Chip</h3>
+          </article>
+
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=650&q=80"
+              alt="Electronics Repair Components"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>CMOS Battery</h3>
+          </article>
+
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=650&q=80"
+              alt="Computer Display and Hardware"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>Laptop Display</h3>
+          </article>
+
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=650&q=80"
+              alt="Computer Cable"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>SATA Cable</h3>
+          </article>
+
+          <article class="hardware-card">
+            <img
+              src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=650&q=80"
+              alt="Laptop Charger and Laptop"
+              loading="lazy"
+              width="650"
+              height="450"
+            >
+            <h3>Laptop Charger</h3>
           </article>
 
         </div>
       </div>
     </section>
 
-    <!-- WHY MYERA AI -->
-    <section class="why-section">
+    <!-- WHY CHOOSE US -->
+
+    <section class="why-section" id="why-us">
       <div class="container">
 
         <div class="section-heading">
@@ -1268,8 +1335,7 @@
           </h2>
 
           <p>
-            Our focus is on practical solutions, useful technical
-            guidance and helping you understand your computer.
+            Practical solutions and technical guidance for your computer needs.
           </p>
         </div>
 
@@ -1290,7 +1356,7 @@
           <article class="why-card">
             <div class="why-icon">🧩</div>
             <h3>Hardware Knowledge</h3>
-            <p>Information about compatibility and computer parts.</p>
+            <p>Information about computer parts and compatibility.</p>
           </article>
 
           <article class="why-card">
@@ -1304,6 +1370,7 @@
     </section>
 
     <!-- ABOUT -->
+
     <section id="about">
       <div class="container about-grid">
 
@@ -1315,14 +1382,13 @@
           </h2>
 
           <p>
-            MYERA AI is focused on computer hardware, desktop and laptop
+            MYERA AI focuses on computer hardware, desktop and laptop
             repair solutions, software support and technology information.
           </p>
 
           <p>
-            From understanding a motherboard problem to choosing RAM,
-            an SSD or a complete computer configuration, our goal is to
-            make technology easier to understand.
+            From motherboard troubleshooting to RAM and SSD upgrades,
+            our goal is to make computer technology easier to understand.
           </p>
 
           <p>
@@ -1343,12 +1409,7 @@
             hardware knowledge, repair guidance and useful solutions.
           </p>
 
-          <p>
-            <strong style="color: var(--gold-light);">
-              Our areas of focus:
-            </strong>
-          </p>
-
+          <p><strong style="color:var(--gold-light)">Our areas of focus:</strong></p>
           <p>✓ Desktop and laptop troubleshooting</p>
           <p>✓ Motherboard and BIOS solutions</p>
           <p>✓ Windows and software support</p>
@@ -1360,6 +1421,7 @@
     </section>
 
     <!-- CONTACT -->
+
     <section class="contact-section" id="contact">
       <div class="container">
 
@@ -1371,8 +1433,8 @@
           </h2>
 
           <p>
-            Need help with a desktop, laptop, motherboard or computer
-            upgrade? Contact MYERA AI to discuss your requirements.
+            Need help with a desktop, laptop, motherboard or computer upgrade?
+            Contact MYERA AI to discuss your requirements.
           </p>
         </div>
 
@@ -1383,7 +1445,6 @@
 
             <div class="contact-item">
               <div class="contact-icon">👨‍💻</div>
-
               <div>
                 <strong>Contact Persons</strong>
                 <p>Abhishek Tripathi</p>
@@ -1393,7 +1454,6 @@
 
             <div class="contact-item">
               <div class="contact-icon">📍</div>
-
               <div>
                 <strong>Address</strong>
                 <p>
@@ -1405,21 +1465,15 @@
 
             <div class="contact-item">
               <div class="contact-icon">📞</div>
-
               <div>
                 <strong>Call Us</strong>
-                <p>
-                  <a href="tel:+917254908327">7254908327</a>
-                </p>
-                <p>
-                  <a href="tel:+919835943151">9835943151</a>
-                </p>
+                <p><a href="tel:+917254908327">7254908327</a></p>
+                <p><a href="tel:+919835943151">9835943151</a></p>
               </div>
             </div>
 
             <div class="contact-item">
               <div class="contact-icon">✉️</div>
-
               <div>
                 <strong>Email</strong>
                 <p>
@@ -1433,45 +1487,36 @@
           </div>
 
           <div class="contact-card">
-            <h3>How Can We Help?</h3>
+            <h3>Get in Touch</h3>
 
             <p>
-              Tell us about your computer problem or the hardware
-              you need. You can call us directly or send a WhatsApp message.
+              Contact our team for computer hardware, laptop repair,
+              desktop services and upgrade-related enquiries.
             </p>
 
             <div class="contact-actions">
-
-              <a href="tel:+917254908327" class="btn btn-gold">
-                📞 Call 7254908327
+              <a class="btn btn-whatsapp"
+                 href="https://wa.me/917254908327?text=Hello%20MYERA%20AI%2C%20I%20need%20computer%20or%20laptop%20service."
+                 target="_blank"
+                 rel="noopener noreferrer">
+                💬 WhatsApp Abhishek
               </a>
 
-              <a href="tel:+919835943151" class="btn btn-outline">
-                📞 Call 9835943151
+              <a class="btn btn-outline"
+                 href="https://wa.me/919835943151?text=Hello%20MYERA%20AI%2C%20I%20need%20computer%20or%20laptop%20service."
+                 target="_blank"
+                 rel="noopener noreferrer">
+                💬 WhatsApp Nandan
               </a>
 
-              <a
-                href="https://wa.me/917254908327?text=Hello%20MYERA%20AI%2C%20I%20need%20help%20with%20a%20computer."
-                class="btn btn-whatsapp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                💬 Chat on WhatsApp
+              <a class="btn btn-gold" href="tel:+917254908327">
+                📞 Call Us Now
               </a>
 
-              <a
-                href="mailto:Myera.org@gmail.com"
-                class="btn btn-outline"
-              >
-                ✉️ Send an Email
+              <a class="btn btn-outline" href="mailto:Myera.org@gmail.com">
+                ✉️ Send Email
               </a>
-
             </div>
-
-            <p class="contact-note">
-              Please contact us to confirm service availability,
-              requirements and any applicable charges.
-            </p>
           </div>
 
         </div>
@@ -1481,66 +1526,93 @@
   </main>
 
   <!-- FOOTER -->
+
   <footer>
     <div class="container">
 
       <div class="footer-content">
-
         <div>
           <div class="footer-brand">MYERA AI</div>
           <p>SMARTER TODAY • BRIGHTER TOMORROW</p>
+          <p>Computer Hardware & Laptop Solutions</p>
         </div>
 
         <div class="footer-links">
           <a href="#home">Home</a>
           <a href="#services">Services</a>
-          <a href="#products">Products</a>
-          <a href="#about">About</a>
+          <a href="#hardware">Hardware Gallery</a>
+          <a href="#about">About Us</a>
           <a href="#contact">Contact</a>
         </div>
-
       </div>
 
       <div class="copyright">
-        © <span id="year"></span> MYERA AI. All rights reserved.
+        © <span id="currentYear"></span> MYERA AI.
+        All rights reserved.
       </div>
 
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP BUTTON -->
+  <!-- FLOATING WHATSAPP -->
+
   <a
     class="floating-whatsapp"
-    href="https://wa.me/917254908327?text=Hello%20MYERA%20AI"
+    href="https://wa.me/917254908327?text=Hello%20MYERA%20AI%2C%20I%20need%20computer%20or%20laptop%20service."
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="Chat with MYERA AI on WhatsApp"
+    aria-label="Contact MYERA AI on WhatsApp"
     title="Chat on WhatsApp"
   >☏</a>
 
-  <!-- JAVASCRIPT -->
   <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const navLinks = document.getElementById("navLinks");
+    (function () {
+      "use strict";
 
-    menuBtn.addEventListener("click", function () {
-      const isOpen = navLinks.classList.toggle("open");
+      const menuBtn = document.getElementById("menuBtn");
+      const navLinks = document.getElementById("navLinks");
 
-      menuBtn.setAttribute("aria-expanded", String(isOpen));
-      menuBtn.textContent = isOpen ? "✕" : "☰";
-    });
+      if (menuBtn && navLinks) {
+        menuBtn.addEventListener("click", function () {
+          const isOpen = navLinks.classList.toggle("open");
 
-    document.querySelectorAll("#navLinks a").forEach(function (link) {
-      link.addEventListener("click", function () {
-        navLinks.classList.remove("open");
-        menuBtn.setAttribute("aria-expanded", "false");
-        menuBtn.textContent = "☰";
-      });
-    });
+          menuBtn.setAttribute("aria-expanded", String(isOpen));
+          menuBtn.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+          );
 
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+          menuBtn.textContent = isOpen ? "✕" : "☰";
+        });
+
+        navLinks.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            navLinks.classList.remove("open");
+            menuBtn.setAttribute("aria-expanded", "false");
+            menuBtn.setAttribute("aria-label", "Open navigation menu");
+            menuBtn.textContent = "☰";
+          });
+        });
+
+        document.addEventListener("click", function (event) {
+          if (
+            !navLinks.contains(event.target) &&
+            !menuBtn.contains(event.target)
+          ) {
+            navLinks.classList.remove("open");
+            menuBtn.setAttribute("aria-expanded", "false");
+            menuBtn.textContent = "☰";
+          }
+        });
+      }
+
+      const yearElement = document.getElementById("currentYear");
+
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+    })();
   </script>
 
 </body>
-</html>
+Tripathiiiiiii
