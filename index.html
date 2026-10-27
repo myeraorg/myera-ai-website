@@ -9,6 +9,32 @@
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#070b14">
   <link rel="canonical" href="https://myera-ai-website.pages.dev/">
+  <meta name="keywords" content="MYERA AI, computer repair Bihar, laptop repair, desktop repair, motherboard repair, BIOS programming, chip level repair, Windows installation, computer hardware solutions, Karakat, Rohtas">
+  <meta name="author" content="MYERA AI">
+  <meta property="og:site_name" content="MYERA AI">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MYERA AI | Computer & Laptop Solutions">
+  <meta name="twitter:description" content="Computer and laptop repair, motherboard troubleshooting, BIOS solutions and hardware services in Bihar.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ComputerStore",
+    "name": "MYERA AI",
+    "url": "https://myera-ai-website.pages.dev/",
+    "email": "Myera.org@gmail.com",
+    "telephone": ["+91-7254908327", "+91-9835943151"],
+    "description": "Computer and laptop repair, computer hardware solutions, motherboard troubleshooting, BIOS solutions and Windows installation.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "BURHWAL (GORARI), Karakat",
+      "addressLocality": "Karakat",
+      "addressRegion": "Bihar",
+      "postalCode": "802214",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
 
   <meta property="og:title" content="MYERA AI | Computer & Laptop Solutions">
   <meta property="og:description" content="Smart computer hardware solutions and reliable repairs by MYERA AI.">
@@ -888,6 +914,49 @@
         transition: none !important;
       }
     }
+
+    /* Bright theme and navigation theme switch */
+    .theme-toggle {
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 9px 12px;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .theme-toggle:hover { border-color: var(--gold); }
+    body[data-theme="light"] {
+      --bg: #f5f8fc; --bg-soft: #eaf0f8; --card: #ffffff;
+      --text: #172033; --muted: #56657a; --border: rgba(20,35,60,.16);
+      --shadow: 0 18px 50px rgba(20,35,60,.10);
+      background: radial-gradient(circle at 80% 5%, rgba(41,184,255,.10), transparent 28%),
+                  radial-gradient(circle at 5% 25%, rgba(244,196,94,.12), transparent 25%), var(--bg);
+      color: var(--text);
+    }
+    body[data-theme="light"] header { background: rgba(255,255,255,.96); }
+    body[data-theme="light"] .nav-links a { color: #243149; }
+    body[data-theme="light"] .menu-btn { color: #172033; }
+    body[data-theme="light"] .hero-description,
+    body[data-theme="light"] .section-subtitle,
+    body[data-theme="light"] .service-card p,
+    body[data-theme="light"] .gallery-card p,
+    body[data-theme="light"] .contact-item p,
+    body[data-theme="light"] .contact-item a,
+    body[data-theme="light"] .contact-card p { color: #4d5b70; }
+    body[data-theme="light"] .service-card,
+    body[data-theme="light"] .gallery-card,
+    body[data-theme="light"] .contact-info,
+    body[data-theme="light"] .contact-card,
+    body[data-theme="light"] .why-card,
+    body[data-theme="light"] .about-card { background: #fff; color: #172033; border-color: rgba(20,35,60,.14); }
+    body[data-theme="light"] .contact-section { background: rgba(225,234,246,.55); }
+    body[data-theme="light"] footer { background: #e8eef7; color: #243149; }
+    body[data-theme="light"] .footer-links a { color: #243149; }
+    @media (max-width: 900px) { .theme-toggle { padding: 8px 10px; } }
+
   </style>
 </head>
 
@@ -915,6 +984,7 @@
       <a href="#gallery">Hardware Gallery</a>
       <a href="#about">About Us</a>
       <a href="#contact" class="nav-contact">Contact Us</a>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to bright theme" aria-pressed="false">☀️ Bright</button>
     </nav>
   </div>
 </header>
@@ -1357,6 +1427,24 @@
       menuBtn.setAttribute("aria-expanded", "false");
       menuBtn.setAttribute("aria-label", "Open navigation menu");
     });
+  });
+
+  const themeToggle = document.getElementById("themeToggle");
+  const savedTheme = localStorage.getItem("myera-theme");
+  function applyTheme(theme) {
+    const light = theme === "light";
+    document.body.setAttribute("data-theme", light ? "light" : "dark");
+    themeToggle.textContent = light ? "🌙 Dark" : "☀️ Bright";
+    themeToggle.setAttribute("aria-pressed", String(light));
+    themeToggle.setAttribute("aria-label", light ? "Switch to dark theme" : "Switch to bright theme");
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    if (themeColor) themeColor.setAttribute("content", light ? "#f5f8fc" : "#070b14");
+  }
+  applyTheme(savedTheme === "light" ? "light" : "dark");
+  themeToggle.addEventListener("click", function () {
+    const nextTheme = document.body.getAttribute("data-theme") === "light" ? "dark" : "light";
+    localStorage.setItem("myera-theme", nextTheme);
+    applyTheme(nextTheme);
   });
 
   document.getElementById("year").textContent =
