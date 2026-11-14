@@ -6,32 +6,31 @@
 
 <title>MYERA AI | Computer Repair & Hardware Solutions</title>
 
-<meta name="description" content="MYERA AI provides professional computer repair, laptop repair, desktop repair, motherboard services, hardware solutions and new computer sales in Karakat, Rohtas, Bihar.">
+<meta name="description" content="MYERA AI provides computer repair, laptop repair, desktop repair, motherboard services, hardware solutions and new computer sales in Karakat, Rohtas, Bihar.">
 
 <meta name="keywords" content="MYERA AI, Computer Repair, Laptop Repair, Desktop Repair, Motherboard Repair, Computer Hardware, BIOS Repair, Karakat, Rohtas, Bihar">
 
 <meta name="author" content="MYERA AI">
+<meta name="theme-color" content="#080808">
 
 <link rel="canonical" href="https://myeraai.info/">
-
-<meta name="theme-color" content="#080808">
 
 <style>
 
 /* =========================
-   GLOBAL VARIABLES
+   THEME VARIABLES
 ========================= */
 
 :root {
     --bg: #080808;
     --panel: #111111;
-    --panel2: #171717;
+    --panel2: #191919;
     --text: #f5f0e5;
     --muted: #b7ad9a;
     --gold: #d6ad55;
     --gold2: #f6df9b;
-    --border: rgba(214,173,85,0.25);
-    --shadow: 0 12px 35px rgba(0,0,0,0.35);
+    --border: rgba(214,173,85,.25);
+    --shadow: 0 12px 35px rgba(0,0,0,.35);
 }
 
 body.light-theme {
@@ -42,8 +41,8 @@ body.light-theme {
     --muted: #5f5a50;
     --gold: #a87919;
     --gold2: #d7ae55;
-    --border: rgba(168,121,25,0.25);
-    --shadow: 0 12px 35px rgba(0,0,0,0.08);
+    --border: rgba(168,121,25,.25);
+    --shadow: 0 12px 35px rgba(0,0,0,.08);
 }
 
 * {
@@ -62,12 +61,12 @@ body {
     color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    transition: background 0.3s, color 0.3s;
+    transition: background .3s, color .3s;
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 img {
@@ -102,16 +101,12 @@ img {
     margin: auto;
 }
 
-.gold-text {
-    color: var(--gold);
-}
-
 .btn {
     display: inline-block;
     padding: 13px 25px;
     border-radius: 5px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: .3s;
     cursor: pointer;
     border: 1px solid var(--gold);
 }
@@ -128,11 +123,11 @@ img {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 22px rgba(214,173,85,0.2);
+    box-shadow: 0 8px 22px rgba(214,173,85,.2);
 }
 
 /* =========================
-   HEADER
+   HEADER AND LOGO
 ========================= */
 
 header {
@@ -156,12 +151,33 @@ header {
     display: flex;
     align-items: center;
     gap: 12px;
+    flex-shrink: 0;
+    min-width: 0;
 }
 
-.brand img {
-    width: 52px;
-    height: 52px;
+/* IMPORTANT: LOGO IMAGE PATH */
+
+.brand-logo {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
     object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.logo-fallback {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 19px;
 }
 
 .brand-name {
@@ -169,6 +185,7 @@ header {
     font-weight: 800;
     letter-spacing: 2px;
     color: var(--gold);
+    white-space: nowrap;
 }
 
 .brand-subtitle {
@@ -180,13 +197,13 @@ header {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 23px;
+    gap: 20px;
 }
 
 .nav-links a {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .nav-links a:hover {
@@ -226,7 +243,7 @@ header {
     position: relative;
     overflow: hidden;
     background:
-        linear-gradient(90deg, rgba(0,0,0,0.94), rgba(0,0,0,0.65)),
+        linear-gradient(90deg, rgba(0,0,0,.94), rgba(0,0,0,.65)),
         url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1800&q=85")
         center/cover no-repeat;
 }
@@ -272,7 +289,7 @@ header {
 }
 
 /* =========================
-   HIGHLIGHT STRIP
+   HIGHLIGHTS
 ========================= */
 
 .highlight-strip {
@@ -292,7 +309,7 @@ header {
 }
 
 /* =========================
-   SERVICE CARDS
+   CARDS
 ========================= */
 
 .grid {
@@ -306,7 +323,7 @@ header {
     border: 1px solid var(--border);
     border-radius: 12px;
     overflow: hidden;
-    transition: 0.3s;
+    transition: .3s;
     box-shadow: var(--shadow);
 }
 
@@ -386,7 +403,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s;
+    transition: .5s;
 }
 
 .gallery-item:hover img {
@@ -436,7 +453,7 @@ header {
 }
 
 .disabled-btn {
-    opacity: 0.55;
+    opacity: .55;
     cursor: not-allowed;
     pointer-events: none;
     background: var(--panel2);
@@ -533,7 +550,7 @@ footer {
     border-top: 1px solid var(--border);
 }
 
-footer .footer-brand {
+.footer-brand {
     color: var(--gold);
     font-size: 23px;
     font-weight: bold;
@@ -547,7 +564,7 @@ footer p {
 }
 
 /* =========================
-   FLOATING WHATSAPP
+   WHATSAPP BUTTON
 ========================= */
 
 .whatsapp-float {
@@ -564,17 +581,17 @@ footer p {
     align-items: center;
     justify-content: center;
     font-size: 29px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 20px rgba(0,0,0,.3);
 }
 
 /* =========================
-   RESPONSIVE DESIGN
+   RESPONSIVE
 ========================= */
 
 @media(max-width: 950px) {
 
     .nav-links {
-        gap: 13px;
+        gap: 12px;
     }
 
     .nav-links a {
@@ -592,9 +609,11 @@ footer p {
         min-height: 70px;
     }
 
-    .brand img {
-        width: 44px;
-        height: 44px;
+    .brand-logo,
+    .logo-fallback {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
     }
 
     .brand-name {
@@ -698,9 +717,7 @@ footer p {
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
+<!-- HEADER -->
 
 <header>
 
@@ -709,10 +726,15 @@ footer p {
     <a href="#home" class="brand">
 
         <img
-            src="./assets/myera-logo.png"
+            id="myeraLogo"
+            class="brand-logo"
+            src="/assets/myera-logo.png"
             alt="MYERA AI Logo"
-            onerror="this.style.display='none';"
         >
+
+        <div id="logoFallback" class="logo-fallback">
+            M
+        </div>
 
         <div>
             <div class="brand-name">MYERA AI</div>
@@ -750,9 +772,7 @@ footer p {
 </header>
 
 
-<!-- =========================
-     HERO SECTION
-========================= -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -794,9 +814,7 @@ footer p {
 </section>
 
 
-<!-- =========================
-     HIGHLIGHT STRIP
-========================= -->
+<!-- HIGHLIGHTS -->
 
 <div class="highlight-strip">
 
@@ -812,9 +830,7 @@ footer p {
 </div>
 
 
-<!-- =========================
-     SERVICES
-========================= -->
+<!-- SERVICES -->
 
 <section class="section" id="services">
 
@@ -906,9 +922,7 @@ footer p {
 </section>
 
 
-<!-- =========================
-     ABOUT US
-========================= -->
+<!-- ABOUT -->
 
 <section class="section" id="about">
 
@@ -957,9 +971,7 @@ footer p {
 </section>
 
 
-<!-- =========================
-     HARDWARE GALLERY
-========================= -->
+<!-- HARDWARE GALLERY -->
 
 <section class="section" id="gallery">
 
@@ -979,51 +991,33 @@ footer p {
     <div class="gallery-grid">
 
         <div class="gallery-item">
-            <img
-                src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=85"
-                alt="Computer motherboard"
-                loading="lazy"
-            >
+            <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=85"
+                 alt="Computer motherboard" loading="lazy">
         </div>
 
         <div class="gallery-item">
-            <img
-                src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=900&q=85"
-                alt="Desktop computer setup"
-                loading="lazy"
-            >
+            <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=900&q=85"
+                 alt="Desktop computer setup" loading="lazy">
         </div>
 
         <div class="gallery-item">
-            <img
-                src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=85"
-                alt="Computer hardware components"
-                loading="lazy"
-            >
+            <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=85"
+                 alt="Computer hardware components" loading="lazy">
         </div>
 
         <div class="gallery-item">
-            <img
-                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85"
-                alt="Laptop computer"
-                loading="lazy"
-            >
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85"
+                 alt="Laptop computer" loading="lazy">
         </div>
 
         <div class="gallery-item">
-            <img
-                src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=900&q=85"
-                alt="Computer accessories"
-                loading="lazy"
-            >
+            <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=900&q=85"
+                 alt="Computer accessories" loading="lazy">
         </div>
 
         <div class="gallery-item">
-            <img
-                src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=85"
-                alt="Computer components"
-                loading="lazy"
-            >
+            <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=85"
+                 alt="Computer components" loading="lazy">
         </div>
 
     </div>
@@ -1033,9 +1027,7 @@ footer p {
 </section>
 
 
-<!-- =========================
-     COMPUTER SALES
-========================= -->
+<!-- COMPUTER SALES -->
 
 <section class="section" id="sales">
 
@@ -1055,18 +1047,11 @@ footer p {
 
     <div class="grid">
 
-        <!-- PRODUCT 1 -->
-
         <div class="card">
 
             <div class="product-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=900&q=85"
-                    alt="Desktop computer"
-                    loading="lazy"
-                >
-
+                <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=900&q=85"
+                     alt="Desktop computer" loading="lazy">
             </div>
 
             <div class="product-content">
@@ -1084,12 +1069,8 @@ footer p {
                         Buy Now - Coming Soon
                     </button>
 
-                    <a
-                        href="https://wa.me/917254908327?text=Hello%20MYERA%20AI,%20I%20want%20to%20enquire%20about%20desktop%20computers."
-                        class="btn btn-gold"
-                        target="_blank"
-                        rel="noopener"
-                    >
+                    <a href="https://wa.me/917254908327?text=Hello%20MYERA%20AI,%20I%20want%20to%20enquire%20about%20desktop%20computers."
+                       class="btn btn-gold" target="_blank" rel="noopener">
                         Enquire
                     </a>
 
@@ -1099,19 +1080,11 @@ footer p {
 
         </div>
 
-
-        <!-- PRODUCT 2 -->
-
         <div class="card">
 
             <div class="product-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85"
-                    alt="Laptop computer"
-                    loading="lazy"
-                >
-
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85"
+                     alt="Laptop computer" loading="lazy">
             </div>
 
             <div class="product-content">
@@ -1129,12 +1102,8 @@ footer p {
                         Buy Now - Coming Soon
                     </button>
 
-                    <a
-                        href="https://wa.me/917254908327?text=Hello%20MYERA%20AI,%20I%20want%20to%20enquire%20about%20laptops."
-                        class="btn btn-gold"
-                        target="_blank"
-                        rel="noopener"
-                    >
+                    <a href="https://wa.me/917254908327?text=Hello%20MYERA%20AI,%20I%20want%20to%20enquire%20about%20laptops."
+                       class="btn btn-gold" target="_blank" rel="noopener">
                         Enquire
                     </a>
 
@@ -1144,19 +1113,11 @@ footer p {
 
         </div>
 
-
-        <!-- PRODUCT 3 -->
-
         <div class="card">
 
             <div class="product-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=85"
-                    alt="Computer hardware parts"
-                    loading="lazy"
-                >
-
+                <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=85"
+                     alt="Computer hardware parts" loading="lazy">
             </div>
 
             <div class="product-content">
@@ -1174,12 +1135,8 @@ footer p {
                         Buy Now - Coming Soon
                     </button>
 
-                    <a
-                        href="https://wa.me/917254908327?text=Hello%20MYERA%20AI,%20I%20want%20to%20enquire%20about%20computer%20parts."
-                        class="btn btn-gold"
-                        target="_blank"
-                        rel="noopener"
-                    >
+                    <a href="https://wa.me/917254908327?text=Hello%20MYERA%20AI,%20I%20want%20to%20enquire%20about%20computer%20parts."
+                       class="btn btn-gold" target="_blank" rel="noopener">
                         Enquire
                     </a>
 
@@ -1196,9 +1153,7 @@ footer p {
 </section>
 
 
-<!-- =========================
-     WHY CHOOSE US
-========================= -->
+<!-- WHY CHOOSE US -->
 
 <section class="section" id="why">
 
@@ -1218,42 +1173,30 @@ footer p {
     <div class="grid">
 
         <div class="why-card">
-
             <div class="card-icon">🛠️</div>
-
             <h3>Complete Solutions</h3>
-
             <p>
                 Computer repair and hardware solutions
                 under one roof.
             </p>
-
         </div>
 
         <div class="why-card">
-
             <div class="card-icon">🎯</div>
-
             <h3>Practical Approach</h3>
-
             <p>
                 Focus on proper diagnosis and
                 suitable repair solutions.
             </p>
-
         </div>
 
         <div class="why-card">
-
             <div class="card-icon">🤝</div>
-
             <h3>Customer Support</h3>
-
             <p>
                 Clear communication and support
                 for customer requirements.
             </p>
-
         </div>
 
     </div>
@@ -1263,9 +1206,7 @@ footer p {
 </section>
 
 
-<!-- =========================
-     CONTACT
-========================= -->
+<!-- CONTACT -->
 
 <section class="section" id="contact">
 
@@ -1287,73 +1228,47 @@ footer p {
         <div class="contact-grid">
 
             <div class="contact-item">
-
                 <h3>Business Contacts</h3>
-
                 <p>Abhishek Tripathy</p>
                 <p>Nandan Yadav</p>
-
             </div>
 
             <div class="contact-item">
-
                 <h3>Phone / WhatsApp</h3>
-
-                <p>
-                    <a href="tel:+917254908327">
-                        7254908327
-                    </a>
-                </p>
-
-                <p>
-                    <a href="tel:+919835943151">
-                        9835943151
-                    </a>
-                </p>
-
+                <p><a href="tel:+917254908327">7254908327</a></p>
+                <p><a href="tel:+919835943151">9835943151</a></p>
             </div>
 
             <div class="contact-item">
-
                 <h3>Email</h3>
-
                 <p>
                     <a href="mailto:Myera.org@gmail.com">
                         Myera.org@gmail.com
                     </a>
                 </p>
-
             </div>
 
             <div class="contact-item">
-
                 <h3>Business Location</h3>
-
                 <p>
                     BURHWAL (GORARI), Karakat,
                     District Rohtas, Bihar – 802214,
                     India
                 </p>
-
             </div>
 
         </div>
 
         <div class="contact-buttons">
 
-            <a
-                href="https://wa.me/917254908327"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-gold"
-            >
+            <a href="https://wa.me/917254908327"
+               target="_blank" rel="noopener"
+               class="btn btn-gold">
                 WhatsApp Us
             </a>
 
-            <a
-                href="tel:+917254908327"
-                class="btn btn-outline"
-            >
+            <a href="tel:+917254908327"
+               class="btn btn-outline">
                 Call Now
             </a>
 
@@ -1366,17 +1281,13 @@ footer p {
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
 <div class="container">
 
-    <div class="footer-brand">
-        MYERA AI
-    </div>
+    <div class="footer-brand">MYERA AI</div>
 
     <p>Smart Technology. Reliable Solutions.</p>
 
@@ -1399,26 +1310,36 @@ footer p {
 </footer>
 
 
-<!-- =========================
-     FLOATING WHATSAPP BUTTON
-========================= -->
+<!-- WHATSAPP FLOATING BUTTON -->
 
-<a
-    href="https://wa.me/917254908327"
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener"
-    aria-label="Chat on WhatsApp"
->
+<a href="https://wa.me/917254908327"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat on WhatsApp">
     ☎
 </a>
 
 
-<!-- =========================
-     JAVASCRIPT
-========================= -->
+<!-- JAVASCRIPT -->
 
 <script>
+
+/* LOGO ERROR HANDLING */
+
+const logo = document.getElementById("myeraLogo");
+const logoFallback = document.getElementById("logoFallback");
+
+logo.addEventListener("error", function() {
+    logo.style.display = "none";
+    logoFallback.style.display = "flex";
+});
+
+logo.addEventListener("load", function() {
+    logo.style.display = "block";
+    logoFallback.style.display = "none";
+});
+
 
 /* MOBILE MENU */
 
@@ -1435,7 +1356,7 @@ menuToggle.addEventListener("click", function() {
 });
 
 
-/* CLOSE MOBILE MENU AFTER CLICK */
+/* CLOSE MENU AFTER CLICK */
 
 document.querySelectorAll(".nav-links a").forEach(function(link) {
 
@@ -1449,11 +1370,17 @@ document.querySelectorAll(".nav-links a").forEach(function(link) {
 });
 
 
-/* DARK / LIGHT THEME */
+/* THEME TOGGLE */
 
 const themeToggle = document.getElementById("themeToggle");
 
-const savedTheme = localStorage.getItem("myera-theme");
+let savedTheme = null;
+
+try {
+    savedTheme = localStorage.getItem("myera-theme");
+} catch(error) {
+    savedTheme = null;
+}
 
 if(savedTheme === "light") {
 
@@ -1470,16 +1397,18 @@ themeToggle.addEventListener("click", function() {
 
     document.body.classList.toggle("light-theme");
 
-    if(document.body.classList.contains("light-theme")) {
+    const isLight =
+        document.body.classList.contains("light-theme");
 
-        localStorage.setItem("myera-theme", "light");
-        themeToggle.textContent = "☾";
+    themeToggle.textContent = isLight ? "☾" : "☀";
 
-    } else {
-
-        localStorage.setItem("myera-theme", "dark");
-        themeToggle.textContent = "☀";
-
+    try {
+        localStorage.setItem(
+            "myera-theme",
+            isLight ? "light" : "dark"
+        );
+    } catch(error) {
+        // Theme still works if storage is unavailable.
     }
 
 });
